@@ -1,81 +1,72 @@
-# DIO - Trilha .NET - Testes Unitários com C#
-www.dio.me
+<div align="center">
+    <h1>Decola Tech 2024</h1>
+</div>
+<br><br>
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de Testes Unitários com C#, da trilha .NET da DIO.
+<div align="center">
+    <img src="assets\images\dio-logo.png" width="250" height="100" hspace="25">
+    <img src="assets\images\avanade-logo.png" width="300" height="100" hspace="25">               
+</div>
+<br><br>
 
-## Contexto
-Você está trabalhando em um sistema, e seus gestores relataram que frequentemente há problemas no software: bugs, funcionalidades que estavam funcionando de repente não funcionam mais, problemas de validações, entre outros. Os clientes já começam a duvidar da qualidade do código.
+<div align="center"><img src="assets\images\bootcamp-logo.png" width="" height="300" hspace="">
+</div>
+<br><br>
 
-Feito isso, você sugeriu a implementação de testes unitários: escrever testes cobrindo as partes mais críticas do sistema, com cenários positivos e negativos, a fim de ter uma rastreabilidade e controle do código, melhorando assim a qualidade desse sistema.
+<div align="center"><img src="assets\images\bootcamp-dio.png" width="300" height="" hspace="10">
+</div>     
+<br><br>
 
-Os gestores aceitaram a sua ideia, e com isso, você precisa implementar testes unitários no sistema.
+<div align="center">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" height="40" hspace="10">          
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="40" height="40" hspace="10">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" width="40" height="40" hspace="10">                    
+</div>
+<br><br>
 
-## Premissas
-O sistema hoje possui dois projetos: um do tipo console, e um do tipo testes com **xUnit**. O projeto do tipo console possui duas classes em que são realizadas as lógicas principais: **ValidacoesLista** e **ValidacoesString**. Essas classes contém métodos em comum que são usados para realizar diversas validações em determinados cenários.
+<div align="center">
+    <img src="https://img.shields.io/badge/IN%C3%8DCIO-22%2F12%2F2023-green" hspace="5"/>
+    <img src="https://img.shields.io/badge/T%C3%89RMINO-14%2F01%2F2024-red" hspace="5"/>
+</div>
+<br>
+<hr>
 
-O projeto de testes possui as classes de teste **ValidacoesListaTests** e **ValidacoesStringTests**, assim como seus métodos para validar o projeto do tipo console, porém estão incompletos. 
+## Introdução
+Olá,
 
-O seu objetivo é implementar os métodos de testes contidos no projeto.
+Esse repositório corresponde ao projeto "Implementando Validações de Testes Unitários com C#" da [DIO - Digital Innovation One](https://www.dio.me/).
+<hr>
 
-## Projeto Console, suas classes e métodos
+## Objetivo
 
-Essas são as classes do projeto console, onde fica a principal lógica do sistema.
+Neste desafio você utilizará seus conhecimentos adquiridos no módulo de Testes Unitários com C# da trilha de .NET. Explorado todos os conceitos que aprendemos nessa imersão e replicado este projeto prático. 
+<br><br>
+<hr>
 
-**Classe ValidaçõesLista**
+## Próximos passos
 
-Classe responsável por realizar diversas validações envolvendo listas.
+Realizar futuras implementações para evolução do projeto inicial (projeto base), tais como, implementações adicionais e refatoração do código.
+<hr>
 
-| Classe          | Método                       | Objetivo                                                                                                                |
-|---------------- |------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| ValidacoesLista | RemoverNumerosNegativos      | Recebe uma lista de números inteiros e retorna uma nova lista, apenas com os números positivos                          |
-| ValidacoesLista | ListaContemDeterminadoNumero | Recebe uma lista de números inteiros e verifica se um determinado número está presente dentro dessa lista               |
-| ValidacoesLista | MultiplicarNumerosLista      | Recebe uma lista de números inteiros e retorna uma nova lista, com seus valores múltiplicados por um determinado número |
-| ValidacoesLista | RetornarMaiorNumeroLista     | Recebe uma lista de números inteiros e retorna o maior número entre eles                                                |
-| ValidacoesLista | RetornarMenorNumeroLista     | Recebe uma lista de números inteiros e retorna o menor número entre eles                                                |
+## Tecnologias Utilizadas
 
-**Classe ValidacoesString**
+<img align=center src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="100" height="50" hspace="5" style="margin-left: 10px"/> 
 
-Classe responsável por realizar diversas validações envolvendo strings.
+## Cursos Envolvidos
+### **Decola Tech 2024** 
+#### **Orientação a Objetos com C#:**
 
-| Classe           | Método                       | Objetivo                                                                                                                
-|------------------|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ValidacoesString | RetornarQuantidadeCaracteres | Recebe um texto qualquer e retorna a quantidade de caracteres presentes no texto                                                                           |
-| ValidacoesString | ContemCaractere              | Recebe um texto qualquer e um texto a ser procurado, retorna verdadeiro ou falso se um determinado trecho procurado está presente no texto                 |
-| ValidacoesString | TextoTerminaCom              | Recebe um texto qualquer e um trecho a ser procurado, retorna verdadeiro ou falso se um determinado trecho procurado está presente no final do texto apenas |
+- Implementando Validações de Testes Unitários com C#.
+<hr>
 
-## Projeto do tipo teste, suas classes e métodos
+## Repositório Original do GitHub
 
-**Classe ValidacoesListaTests**
+Referência direta ao código-fonte original.
 
-Classe responsável por realizar os testes da classe ValidacoesLista.
+- Leonardo Buta: [Leonardo Buta](https://github.com/leonardo-buta/)
 
-| Classe               | Método de teste                               | Resultado esperado do teste
-|----------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| ValidacoesListaTests | DeveRemoverNumerosNegativosDeUmaLista         | Ao passar uma lista com diversos números, incluindo positivos e negativos, deve ser retornado uma nova lista apenas com números positivos  |
-| ValidacoesListaTests | DeveConterONumero9NaLista                     | Ao passar uma lista com diversos números, incluindo o número 9, deve retornar verdadeiro, pois encontrou o 9 na lista                      |
-| ValidacoesListaTests | NaoDeveConterONumero10NaLista                 | Ao passar uma lista com diversos números, mas sem o número 10, deve retornar falso, pois não encontrou o 10 na lista                       |
-| ValidacoesListaTests | DeveMultiplicarOsElementosDaListaPor2         | Ao passar uma lista de inteiros, deve retornar uma nova lista, com todos os elementos da lista multiplicados por 2                         |
-| ValidacoesListaTests | DeveRetornar9ComoMaiorNumeroDaLista           | Ao passar uma lista de números inteiros, sendo o maior deles 9, deve retornar o 9 como maior elemento dentro dessa lista                   |
-| ValidacoesListaTests | DeveRetornarOitoNegativoComoMenorNumeroDaList | Ao passar uma lista de números inteiros, sendo o menor deles -8, deve retornar o -8 como menor elemento dentro dessa lista                 |
+- Endereço: [trilha-net-testes-unitarios-desafio](https://github.com/digitalinnovationone/trilha-net-testes-unitarios-desafio)
+<hr>
 
-**Classe ValidacoesStringTests**
-
-Classe responsável por realizar os testes da classe ValidacoesString.
-
-| Classe                | Método de teste                                  | Resultado esperado do teste
-|---------------------- |--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ValidacoesStringTests | DeveRetornar6QuantidadeCaracteresDaPalavraMatrix | Ao passar um texto escrito a palavra "Matrix", deve retornar o número 6, representando 6 caracteres presentes na palavra                                                                         |
-| ValidacoesStringTests | DeveContemAPalavraQualquerNoTexto                | Ao passar um texto escrito "Esse é um texto qualquer" e procurar pela palavra "qualquer", deve retornar verdadeiro pois a palavra existe no texto                                                |
-| ValidacoesStringTests | NaoDeveConterAPalavraTesteNoTexto                | Ao passar um texto escrito "Esse é um texto qualquer" e procurar pela palavra "teste", deve retornar falso pois a palavra não existe no texto                                                    |
-| ValidacoesStringTests | TextoDeveTerminarComAPalavraProcurado            | Ao passar um texto escrito "Começo, meio e fim do texto procurado" e procurar pela palavra "procurado", deve retornar verdadeiro pois a palavra existe no texto e está inclusa no final do texto |
-
-## Estrutura do projeto
-
-O projeto está estruturado da seguinte maneira:
-
-![Métodos Swagger](Imagens/projeto.png)
-
-
-## Solução
-O código de testes está pela metade, e você deverá dar continuidade implementando os testes descritos acima, para que no final, tenhamos um programa de testes funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## Agradecimentos
+Gostaria de agradecer a [DIO - Digital Innovation One](https://www.dio.me/) e ao instrutor [Leonardo Buta](https://github.com/leonardo-buta/) por compartilhar seu conhecimento.
