@@ -21,7 +21,7 @@ public class ValidacoesListaTests
     }
 
     [Fact]
-    public void DeveConterONumero9NaLista()
+    public void DeveConterONumero9NaLista() 
     {
         // Arrange
         var lista = new List<int> { 5, -1, -8, 9 };
